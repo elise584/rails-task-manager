@@ -1,6 +1,6 @@
 --- READ ---
-As a user, I can list tasks
-As a user, I can view the details of a task
+As a user, I can list tasks ✅
+As a user, I can view the details of a task ✅
 
 --- CREATE ---
 As a user, I can add a new task

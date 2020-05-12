@@ -2,8 +2,10 @@
 <p><%= @task.details %></p>
 <p>Checkbox this task is <%= @task.completed %></p>
 
-<% if task.completed %>
-  <%= 'checkbox + this task is completed' %>
-  <% else %>
-  <%= 'checkbox + this task is not completed yet' %>
-<% end %>
+<%# if task.completed %>
+  <%#= 'checkbox + this task is completed' %>
+  <%# else %>
+  <%#= 'checkbox + this task is not completed yet' %>
+<%# end %>
+
+<%= link_to "Back", tasks_path %>
