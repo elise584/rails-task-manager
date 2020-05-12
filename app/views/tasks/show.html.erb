@@ -1,12 +1,16 @@
 <h2><%= @task.title %></h2>
-<p><%= @task.details %></p>
-<p>Checkbox this task is <%= @task.completed %></p>
+<div class="details">
+  <p><%= @task.details %></p>
+</div>
 
-<%# if task.completed %>
-  <%#= 'checkbox + this task is completed' %>
-  <%# else %>
-  <%#= 'checkbox + this task is not completed yet' %>
-<%# end %>
+<p>
+<%= check_box_tag 'task_ids[]', @task.id, checked = @task.completed, disabled: true %>
+<% if @task.completed %>
+  <%= 'This task is completed' %>
+  <% else %>
+  <%= 'This task is not completed yet' %>
+<% end %>
+</p>
 
 <hr></hr>
 <%= link_to "Edit task", task_edit_path(@task) %>

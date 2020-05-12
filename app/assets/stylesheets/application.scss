@@ -1,0 +1,19 @@
+@import "bootstrap/scss/bootstrap";
+
+$detail: #F7F7F9;
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 600;
+  padding: 20px;
+  margin: 0, auto;
+}
+
+.details {
+  background-color: $detail;
+  padding: 20px;
+  border-radius: 4px;
+}
